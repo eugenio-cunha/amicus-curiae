@@ -1,0 +1,29 @@
+{
+  "name": "amicus-curiae",
+  "version": "1.0.0",
+  "description": "Amicus curiae",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "rm -rf docs/  && next build && next export -o docs && touch docs/.nojekyll && touch docs/CNAME&& echo \"amicus.curiae.com.br\" >> docs/CNAME"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenio-cunha/amicus-curiae.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugenio-cunha/amicus-curiae/issues"
+  },
+  "homepage": "https://github.com/eugenio-cunha/amicus-curiae#readme",
+  "dependencies": {
+    "next": "^9.5.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
